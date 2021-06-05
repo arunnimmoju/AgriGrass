@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "141655811540",
+    "project_id": "agrigrass-5102b",
+    "storage_bucket": "agrigrass-5102b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141655811540:android:6a02ecae82268462cca241",
+        "android_client_info": {
+          "package_name": "com.example.agrigrass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141655811540-jscs94t3vlss6c0abv7rk6d6t4escso2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ1wfoB7NM-CceWhJPH_6rp6AOxf0xXc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141655811540-jscs94t3vlss6c0abv7rk6d6t4escso2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
