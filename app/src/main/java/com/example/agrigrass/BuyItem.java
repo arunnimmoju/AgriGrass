@@ -21,7 +21,6 @@ import com.google.firebase.storage.StorageReference;
 import com.squareup.picasso.Picasso;
 
 public class BuyItem extends AppCompatActivity {
-
     private ImageView imageView;
     TextView titletextView;
     TextView datetextView;
@@ -34,10 +33,12 @@ public class BuyItem extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buy_item);
+
         imageView = findViewById(R.id.image_single_view_activity);
         titletextView = findViewById(R.id.titleView_activity);
         datetextView = findViewById(R.id.dateView_activity);
         btnBuy = findViewById(R.id.btn_buy);
+
         ref = FirebaseDatabase.getInstance().getReference().child("Report");
         String ReportKey = getIntent().getStringExtra("ReportKey");
         DataRef = FirebaseDatabase.getInstance().getReference().child("Report").child(ReportKey);
@@ -54,6 +55,7 @@ public class BuyItem extends AppCompatActivity {
                     Picasso.get().load(ImageUrl).into(imageView);
                     titletextView.setText(reportTitle);
                     datetextView.setText(reportDate);
+
                 }
             }
 
@@ -66,10 +68,10 @@ public class BuyItem extends AppCompatActivity {
         btnBuy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent= new Intent(BuyItem.this,OrderDetails.class);
                 startActivity(intent);
             }
         });
-
     }
 }

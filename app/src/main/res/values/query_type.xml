@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="Query_Type">
+        <item>Order Details</item>
+        <item>Order Tracking</item>
+        <item>App Crash</item>
+        <item>Payment Details</item>
+        <item>Profile</item>
+        <item>Login Issues</item>
+        <item>Other Issue</item>
+    </array>
+</resources>

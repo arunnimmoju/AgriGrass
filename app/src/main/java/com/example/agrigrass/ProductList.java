@@ -96,6 +96,8 @@ public class ProductList extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(ProductList.this,BuyItem.class);
+                        Intent intent1 = new Intent(ProductList.this,BuyItem.class);
+                        intent1.putExtra("ReportKey",getRef(position).getKey());
                         intent.putExtra("ReportKey",getRef(position).getKey());
                         startActivity(intent);
                     }
@@ -106,7 +108,6 @@ public class ProductList extends AppCompatActivity {
             @Override
             public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                 View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.single_view,parent,false);
-
                 return new MyViewHolder(v);
             }
         };
@@ -118,6 +119,8 @@ public class ProductList extends AppCompatActivity {
         super.onBackPressed();
         FirebaseAuth.getInstance().signOut();
         Intent intent= new Intent(ProductList.this,Home.class);
+        Intent intent1 = new Intent(ProductList.this,BuyItem.class);
+        intent1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();

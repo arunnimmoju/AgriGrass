@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AgriGrass">
-        <activity android:name=".OrderDetails"></activity>
+        <activity android:name=".ConfirmDetails"></activity>
+        <activity android:name=".ConfirmOrder" />
+        <activity android:name=".OrderDetails" />
         <activity android:name=".BuyItem" />
         <activity android:name=".updateProfileActivity" />
         <activity android:name=".ContactUs" />
